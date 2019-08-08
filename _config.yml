@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
-language: en
-timezone:
+title: 带带大师兄
+subtitle: 儒雅随和
+description: 我是你👨👨，你是我👶👶
+keywords: 💉💧🐂🍺
+author: Xiaochuan Sun
+language: ch
+timezone: CST
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: lmxx1234567.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -78,4 +78,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/lmxx1234567/lmxx1234567.github.io
+  branch: publish
