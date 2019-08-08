@@ -80,4 +80,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/lmxx1234567/lmxx1234567.github.io
-  branch: publish
+  branch: master
