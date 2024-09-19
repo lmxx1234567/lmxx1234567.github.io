@@ -1,6 +1,7 @@
 "use client";
 
 import { Switch } from "@nextui-org/react";
+import { IconMoon, IconSun } from "@tabler/icons-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -15,10 +16,12 @@ export function ThemeSwitcher() {
     if (!mounted) return null
 
     return (
-        <div>
-            The current theme is: {theme}
-            <br />
-            <Switch isSelected={theme === 'dark'} onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
-        </div>
+        <Switch
+            color="default"
+            startContent={<IconMoon />}
+            endContent={<IconSun />}
+            isSelected={theme === 'dark'}
+            onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        />
     )
 };
