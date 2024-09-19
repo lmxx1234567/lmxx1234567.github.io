@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nextui-org/react";
+import { Switch } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -17,8 +17,8 @@ export function ThemeSwitcher() {
     return (
         <div>
             The current theme is: {theme}
-            <Button onClick={() => setTheme('light')}>Light Mode</Button>
-            <Button onClick={() => setTheme('dark')}>Dark Mode</Button>
+            <br />
+            <Switch isSelected={theme === 'dark'} onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
         </div>
     )
 };
